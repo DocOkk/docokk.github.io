@@ -223,8 +223,8 @@ address { font-style: normal; }
 .faq details p { margin: .6rem 0 0; }
 
 /* ---------- booking form ---------- */
-.booking-layout { display: grid; gap: 2rem; }
-.form-panel { min-width: 0; }
+.form-panel { max-width: 46rem; }
+
 fieldset {
   margin: 0 0 1.5rem;
   padding: 1rem 1rem .25rem;
@@ -266,9 +266,18 @@ input:focus, select:focus, textarea:focus { border-color: #17594f; }
 .error-summary ul { margin: 0; padding-left: 1.2rem; }
 .error-summary a { color: #a3261b; font-weight: 650; }
 .confirmation { border: 3px solid #17594f; background: #e7efe7; }
-.booking-aside { align-self: start; padding: 1.25rem; border-radius: .4rem; background: #e7efe7; }
-.booking-aside h2 { font-size: 1.35rem; }
-.booking-aside .hours { margin-bottom: 1rem; }
+.optional { margin-bottom: 1.1rem; padding: .75rem 1rem; border: 1px dashed #8aa49b; border-radius: .3rem; }
+.optional summary { cursor: pointer; font-weight: 650; color: #17594f; }
+.optional[open] summary { margin-bottom: .9rem; }
+
+/* who-to-see guide */
+.who { padding: 1.25rem; border-left: 5px solid #a15a2a; border-radius: .4rem; background: #fff; }
+.who h2 { font-size: 1.4rem; }
+.who-list { list-style: none; margin: 0 0 .75rem; padding: 0; }
+.who-list li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .1rem 1rem; padding: .6rem 0; border-top: 1px solid #cad8cf; }
+.who-list strong { font-weight: 600; }
+.who-list span { text-align: left; }
+.who-list a { font-weight: 700; }
 
 /* ---------- footer ---------- */
 .site-footer { background: #153330; color: #fff; padding: 2.5rem 0 1rem; }
@@ -322,8 +331,6 @@ input:focus, select:focus, textarea:focus { border-color: #17594f; }
   .split.tech img { max-width: none; }
   .card-grid.three, .service-links, .staff-grid, .contact-grid { grid-template-columns: repeat(3, 1fr); }
   .contact-grid .card-accent { grid-column: auto; }
-  .booking-layout { grid-template-columns: minmax(0, 2fr) minmax(16rem, 1fr); align-items: start; }
-  .booking-aside { position: sticky; top: 1.5rem; }
   .cta-panel { padding: 3rem; }
   .footer-grid { grid-template-columns: repeat(4, 1fr); }
 }

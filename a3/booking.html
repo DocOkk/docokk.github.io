@@ -39,7 +39,8 @@
 
 <div class="wrap page-head">
   <h1>Book an appointment</h1>
-  <p class="lead">Request a time online and get <strong>25% off</strong> your next eye-care visit. We&rsquo;ll contact you to confirm.</p>
+  <p class="lead">Four short steps &ndash; about 2 minutes. Book online and get <strong>25% off</strong> your next eye-care visit. We&rsquo;ll contact you to confirm.</p>
+  <p>Prefer to talk? Call <a href="tel:+61751114488">07 5111 4488</a> (Mon&ndash;Fri 9 am&ndash;6 pm, Sat 9 am&ndash;2 pm).</p>
 </div>
 
 <div class="wrap booking-layout">
@@ -76,7 +77,7 @@
             <option value="any">No preference</option>
             <option value="melissa">Dr Melissa Javali &ndash; family and paediatric</option>
             <option value="daniel">Dr Daniel Wilson &ndash; paediatric</option>
-            <option value="alan">Dr Alan Koya &ndash; diagnostic and eye disease</option>
+            <option value="alan">Dr Alan Koya &ndash; eye disease, diabetes and blood pressure</option>
             <option value="sarah">Sarah Ravie &ndash; eyewear and lenses</option>
           </select>
         </div>
@@ -151,13 +152,6 @@
           </div>
           <p class="error" id="visited-error"></p>
         </div>
-        <div class="field">
-          <p class="label" id="wears-label">Does the patient currently wear: <em>(optional)</em></p>
-          <div class="choice-group" role="group" aria-labelledby="wears-label">
-            <label class="choice"><input type="checkbox" name="wears" value="glasses"> Glasses</label>
-            <label class="choice"><input type="checkbox" name="wears" value="contacts"> Contact lenses</label>
-          </div>
-        </div>
       </fieldset>
 
       <fieldset>
@@ -192,12 +186,22 @@
       </fieldset>
 
       <fieldset>
-        <legend>4. Anything else?</legend>
+        <legend>4. Confirm</legend>
+        <details class="optional">
+          <summary>Add optional details (current glasses, concerns or questions)</summary>
         <div class="field">
-          <label for="notes">Vision concerns or questions <em>(optional)</em></label>
+          <p class="label" id="wears-label">Does the patient currently wear: </p>
+          <div class="choice-group" role="group" aria-labelledby="wears-label">
+            <label class="choice"><input type="checkbox" name="wears" value="glasses"> Glasses</label>
+            <label class="choice"><input type="checkbox" name="wears" value="contacts"> Contact lenses</label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="notes">Vision concerns or questions</label>
           <textarea id="notes" name="notes" rows="4" maxlength="500" aria-describedby="notes-count"></textarea>
           <p class="hint" id="notes-count" aria-live="polite">500 characters left</p>
         </div>
+        </details>
         <div class="field">
           <label class="choice"><input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error"> I agree that Vcare Opticals may contact me to confirm this appointment.</label>
           <p class="error" id="consent-error"></p>
@@ -218,17 +222,6 @@
     </div>
   </div>
 
-  <aside class="booking-aside" aria-labelledby="aside-h">
-    <h2 id="aside-h">Prefer to talk to us?</h2>
-    <p>Call <a href="tel:+61751114488">07 5111 4488</a> during trading hours and our receptionist, Emi, will help you book.</p>
-    <table class="hours">
-      <caption>Trading hours</caption>
-      <tr><th scope="row">Mon&ndash;Fri</th><td>9 am &ndash; 6 pm</td></tr>
-      <tr><th scope="row">Saturday</th><td>9 am &ndash; 2 pm</td></tr>
-      <tr><th scope="row">Sunday</th><td>Closed</td></tr>
-    </table>
-    <p>Booking the free checkup on Saturday 4 July? <a href="free-checkup.html">See how to book it</a>.</p>
-  </aside>
 </div>
 
   </main>
